@@ -16,3 +16,10 @@ pub fn concatenate(a: String, b: String) -> String {
 pub fn greeting() -> String {
     GREETING.to_owned()
 }
+
+/// # Output
+#[test]
+fn test() {
+    println!("🦀 {}", concatenate("foo".to_string(), "bar".to_string()));
+    println!("🦀 {}", greeting());
+}
