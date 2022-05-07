@@ -16,6 +16,12 @@ pub fn hurray_for_sets() {
     set2.retain(|word| word.len() > 1);
 
     for word in set2 {
-        println!("{}", word);
+        println!("🦀 {}", word);
     }
+}
+
+/// # Output
+#[test]
+fn test() {
+    hurray_for_sets();
 }
