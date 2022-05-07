@@ -11,7 +11,13 @@ pub struct MyStruct {
 /// # Example
 pub fn create_struct_with_foo(foo: String) -> MyStruct {
     // Instantiation is similar to TS object literals, but we just
-    // need to proide the name:
+    // need to provide the name:
     MyStruct { foo, bar: 0 }
     // (Also note how we can initialize private properties here?)
+}
+
+/// # Output
+#[test]
+fn test() {
+    println!("🦀 {}", create_struct_with_foo("hello".to_string()).foo);
 }
