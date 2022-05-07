@@ -1,9 +1,11 @@
 import { MyEnum, MyEnumType } from './enums';
 
-// This is where enums start to shine!
+// We need to use `type` instead of `enum`
 
 export function other_function(input: MyEnumType) {
+    // Need to case to string for comparison.
     switch (input.toString()) {
+        // We need to implements the `toString` method for each type.
         case MyEnum.UnnamedValues('hi', 123).toString():
             const [a, b] = input as [string, number];
             console.log(`🦞 1️⃣ Input had values: (${a}, ${b})`);
