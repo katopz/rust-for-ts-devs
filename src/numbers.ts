@@ -3,23 +3,21 @@
 // various types of numbers.
 
 /// Alias for a plain, signed 32-bit integer.
-pub type Number = i32;
+/// > Casting to `number`
+export type Number = number;
 
 /// Floating-point numbers come in two varieties: `f32` and `f64`.
-pub type AlsoANumber = f64;
+export type AlsoANumber = number;
 
 /// `isize` and `usize` do not define a fixed amount of bits, but instead use a
 /// platform-defined amount of bits (most commonly 32 or 64).
-pub type AndAnother = usize;
+export type AndAnother = number;
 
 /// # Example
-pub fn add(a: Number, b: AlsoANumber) -> AndAnother {
+export function add(a: number, b: AlsoANumber): AndAnother {
     let result = a + (b as Number);
-    result as AndAnother
+    return result as AndAnother
 }
 
 /// # Output
-#[test]
-fn test() {
-    println!("🦀 {}", add(1, 2.0));
-}
+console.log(`🦞 ${add(1, 2.0)}`);
