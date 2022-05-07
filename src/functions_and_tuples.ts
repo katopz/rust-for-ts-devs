@@ -1,21 +1,18 @@
 // We already saw some functions, but let's look at them more closely:
 
 /// # Example: Function without return value:
-pub fn unit_function() {
-    println!("Hello, world!");
+export function unit_function() {
+    console.log("Hello, world!");
 }
 
 /// # Example: Function with multiple return values:
-pub fn tuple_function() -> (String, u64) {
+export function tuple_function(): [string, number] {
     // For good measure, function calls look like you'd expect them:
     unit_function();
 
-    ("The answer is:".to_owned(), 42)
+    return ["The answer is:", 42]
     // Note the lack of semi-colon: -^
 }
 
 /// # Output
-#[test]
-fn test() {
-    println!("🦀 {:?}", tuple_function());
-}
+console.log(`🦞 ${tuple_function()}`);
