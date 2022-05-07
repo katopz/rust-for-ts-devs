@@ -16,6 +16,12 @@ pub fn my_function(a: i64) -> String {
 
 pub fn other_function(input: MyEnum) {
     if let MyEnum::UnnamedValues(a, b) = input {
-        println!("Input had values: ({}, {})", a, b)
+        println!("🦀 Input had values: ({}, {})", a, b)
     }
+}
+
+/// # Output
+#[test]
+fn test() {
+    other_function(MyEnum::UnnamedValues("Hello".to_owned(), 42));
 }
