@@ -1,4 +1,4 @@
-import { MyEnum, IMyEnum, MyEnumType } from './enums';
+import { MyEnum, MyEnumType } from './enums';
 
 // This is where enums start to shine!
 
