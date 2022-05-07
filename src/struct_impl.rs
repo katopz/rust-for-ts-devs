@@ -10,6 +10,12 @@ impl MyStruct {
 
     /// Regular methods take a reference to `self`:
     pub fn print_foo(&self) {
-        println!("Foo: {}", self.foo);
+        println!("🦀 Foo: {}", self.foo);
     }
+}
+
+/// # Output
+#[test]
+fn test() {
+    MyStruct::new().print_foo();
 }
