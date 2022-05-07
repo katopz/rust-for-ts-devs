@@ -12,8 +12,18 @@ pub fn hurray_for_maps() {
     map2.retain(|_key, value| value.len() > 1);
 
     for (key, value) in map2.iter() {
-        println!("{}: {}", key, value);
+        println!("🦀 {}: {}", key, value);
     }
 
-    println!("Entry 4: {}", map2.entry(4).or_insert("!"));
+    println!("🦀  Entry 4: {}", map2.entry(4).or_insert("!"));
 }
+
+/// # Output
+#[test]
+fn test() {
+    hurray_for_maps();
+}
+
+// 🦀 2: World
+// 🦀 1: Hello
+// 🦀  Entry 4: !
