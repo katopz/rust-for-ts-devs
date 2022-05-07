@@ -34,8 +34,9 @@ fn test() {
     println!("🦀 {:?}", hurray_for_vecs());
 }
 
-// 🦀 0["Hello", "World", "!"]
-// 🦀 1["Hello", ", ", "World", "!"]
-// 🦀 2["Hello", ", ", "!"]
-// 🦀 3["Hello", ", ", "Word", "!"]
+// 🦀 0: ["Hello", "World", "!"]
+// 🦀 1: ["Hello", ", ", "World", "!"]
+// 🦀 2: ["Hello", ", ", "!"]
+// 🦀 3: ["Hello", ", ", "Word", "!"]
+// 🦀 4: ["Hello", ", ", "World", "!"]
 // 🦀 ["HELLO", ", ", "WORLD", "!"]
