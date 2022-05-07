@@ -2,7 +2,7 @@
 // ... but don't underestimate them. In Rust they can
 // carry data!
 
-enum MyEnum {
+export enum MyEnum {
     Plain = "Plain",
 
     // js is not supported,
@@ -12,7 +12,9 @@ enum MyEnum {
     // NamedValues: { foo: string, bar: number }
 }
 
-interface IMyEnum {
+export type MyEnumType = keyof typeof MyEnum;
+
+export interface IMyEnum {
     Plain: string
     UnnamedValues: [string, number]
     NamedValues: { foo: string, bar: number }

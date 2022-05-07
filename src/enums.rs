@@ -1,9 +1,6 @@
 // Enums are a familiar concept from TypeScript...
 // ... but don't underestimate them. In Rust they can
 // carry data!
-
-use std::fmt;
-
 #[derive(Debug)]
 pub enum MyEnum {
     Plain,
