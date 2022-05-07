@@ -17,9 +17,12 @@ pub fn other_function(input: MyEnum) {
 /// # Output
 #[test]
 fn test() {
-    // This wont' run due to `match` is reserved keyword and somehow test can't be run
-    // Will need to run test from `main.rs` instead.
     other_function(MyEnum::UnnamedValues("hi".to_owned(), 123));
+    other_function(MyEnum::NamedValues {
+        foo: "hello".to_owned(),
+        bar: 456,
+    });
 }
 
 // 🦀 1️⃣ Input had values: (hi, 123)
+// 🦀 2️⃣ Input had values: (hello, 456)
