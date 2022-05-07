@@ -21,8 +21,6 @@ export function hurray_for_maps() {
     }
 
     console.log("🦞 Entry 4: ", Object.values(bar[4] ? bar[4] : bar[4] = { 4: '!' })[0])
-
-    return map2
 }
 
 /// # Output
