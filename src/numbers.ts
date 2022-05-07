@@ -3,7 +3,6 @@
 // various types of numbers.
 
 /// Alias for a plain, signed 32-bit integer.
-/// > Casting to `number`
 export type Number = number;
 
 /// Floating-point numbers come in two varieties: `f32` and `f64`.
