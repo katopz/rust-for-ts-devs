@@ -13,6 +13,7 @@ export function hurray(): number {
     return a.foo + b.foo
 }
 
+/// # Output
 console.log(`🐥 hurray: ${hurray()}`)
 
 // 🐥 hurray: 2
