@@ -28,6 +28,7 @@ class CloneAbleItem implements ICloneAble<string> {
     }
 }
 
+/// # Output
 console.log(`🦞 ${clone_and_print(new CloneAbleItem('foo'))}`)
 console.log(`🦞 ${add(1, 2)}`)
 
