@@ -32,7 +32,7 @@ export type Result<T, E> = Error | { value: T, error: E, toString?: () => string
 export const Ok = (n): Result<number, string> & ok_type<number> & ok_or_else_type<number> & unwrap_type<number> & unwrap_or_type<number> => ({
     value: n, error: "",
     toString: () => `Ok(${n})`,
-    ok: () => n,
+    ok: () => Some(n),
     unwrap: () => {
         if (isNaN(n)) return Error('error')
         return n
@@ -58,9 +58,5 @@ export function divide(x: number, y: number): Result<number, string> & ok_type<n
 console.log(`🐥 positive_n: ${positive_n(42)}`);
 console.log(`🐥 divide: ${divide(42, 2)}`);
 
-let x: Option<number> = Some(2) as Option<number>;
-console.log(`🐥 x: ${x}`);
-
 // 🐥 positive_n: Some(42)
 // 🐥 divide: Ok(21)
-// 🐥 x: Some(2)
