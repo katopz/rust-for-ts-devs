@@ -20,5 +20,14 @@ fn modify(b: &mut MyCopyableStruct) {
 }
 
 fn print(b: &MyCopyableStruct) {
-    println!("b.foo = {}", b.foo); // ???
+    println!("🦀 b.foo = {}", b.foo); // ???
 }
+
+/// # Output
+#[test]
+fn test() {
+    lets_borrow();
+}
+
+// 🦀 b.foo = 2
+// 🦀 b.foo = 3
