@@ -12,8 +12,18 @@ pub fn one_plus_one() -> u64 {
 pub fn trouble_in_paradise() {
     let a = create_struct_with_foo("foo".to_owned());
     let b = a;
-    println!("Foo b: {}", b.foo);
+    println!("🦀 Foo b: {}", b.foo);
     // Uncommenting the next line gives us:
     //   "borrow of moved value: `a`" :((
     //println!("Foo a: {}", a.foo);
 }
+
+/// # Output
+#[test]
+fn test() {
+    println!("🦀 one_plus_one: {}", one_plus_one());
+    trouble_in_paradise();
+}
+
+// 🦀 one_plus_one: 2
+// 🦀 Foo b: foo
