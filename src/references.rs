@@ -5,7 +5,7 @@ use crate::course_2::MyCopyableStruct;
 pub fn second_quiz() {
     let mut b = MyCopyableStruct { foo: 1 };
     modify(&mut b);
-    println!("b.foo = {}", b.foo); // ???
+    println!("🦀 b.foo = {}", b.foo); // ???
 }
 
 // In Rust terminology, `modify()` *borrows* a mutable
@@ -13,3 +13,11 @@ pub fn second_quiz() {
 fn modify(b: &mut MyCopyableStruct) {
     b.foo = 2;
 }
+
+/// # Output
+#[test]
+fn test() {
+    second_quiz();
+}
+
+// 🦀 b.foo = 2
