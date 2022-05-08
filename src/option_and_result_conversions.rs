@@ -19,3 +19,17 @@ pub fn positive_sum(x: i32, y: i32) -> Result<i32, String> {
     let y = positive_n_result(y)?;
     Ok(x + y)
 }
+
+/// # Output
+#[test]
+fn test() {
+    println!("🦀 positive_n_result: {:?}", positive_n_result(42));
+    println!("🦀 divide_option: {:?}", divide_option(42, 2));
+    println!("🦀 divide_or_zero: {:?}", divide_or_zero(42, 0));
+    println!("🦀 positive_sum: {:?}", positive_sum(1, 2));
+}
+
+// 🦀 positive_n_result: Ok(42)
+// 🦀 divide_option: Some(21)
+// 🦀 divide_or_zero: 0
+// 🦀 positive_sum: Ok(3)
