@@ -3,7 +3,7 @@ struct MyPlainStruct {
 }
 
 // Note we can only derive `Copy` if we *also* derive `Clone`.
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub struct MyCopyableStruct {
     pub foo: u64, // All primitives are copyable out of the box.
 }
