@@ -15,8 +15,8 @@ export function divide_or_zero(x: number, y: number): Option<number> {
 }
 
 export function positive_sum(x: number, y: number): Result<number, string> {
-    let xx = positive_n_result(x).unwrap() as number;
-    let yy = positive_n_result(y).unwrap() as number;
+    let xx = positive_n_result(x).unwrap();
+    let yy = positive_n_result(y).unwrap();
     return Ok(xx + yy)
 }
 

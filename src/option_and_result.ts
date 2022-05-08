@@ -25,7 +25,7 @@ export function positive_n(n: number): typeof Some {
     }
 }
 export type ok_type<T> = { ok?: () => T };
-export type unwrap_type<T> = { unwrap?: () => T | void };
+export type unwrap_type<T> = { unwrap?: () => T };
 export type unwrap_or_type<T> = { unwrap_or?: (T) => T };
 
 export type Result<T, E> = Error | { value: T, error: E, toString?: () => string };
