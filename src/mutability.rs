@@ -10,11 +10,21 @@ pub fn one_plus_one() -> u64 {
 
 // Quiz time! (Use `cargo run` to see the answer)
 pub fn quiz() {
-    let a = MyCopyableStruct { foo: 1 };
+    let mut a = MyCopyableStruct { foo: 1 };
     modify(a);
-    println!("a.foo = {}", a.foo); // ???
+    println!("🦀 a.foo = {}", a.foo); // ???
+    a.foo = 2;
+    println!("🦀 a.foo = {}", a.foo); // ???
 }
 
 fn modify(mut a: MyCopyableStruct) {
     a.foo = 2;
 }
+
+/// # Output
+#[test]
+fn test() {
+    quiz();
+}
+
+// 🦀 a.foo = 1
