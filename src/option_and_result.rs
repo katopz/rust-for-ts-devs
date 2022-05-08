@@ -23,8 +23,8 @@ pub fn divide(x: i32, y: i32) -> Result<i32, String> {
 #[test]
 fn test() {
     println!("🦀 positive_n: {:?}", positive_n(42));
-    println!("🦀 positive_n: {:?}", divide(42, 2));
+    println!("🦀 divide: {:?}", divide(42, 2));
 }
 
 // 🦀 positive_n: Some(42)
-// 🦀 positive_n: Ok(21)
+// 🦀 divide: Ok(21)

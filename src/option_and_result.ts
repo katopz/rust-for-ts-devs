@@ -33,8 +33,8 @@ export function divide(x: number, y: number): Result<number, string> {
 }
 
 /// # Output
-console.log(`🐥 ${positive_n(42)}`);
-console.log(`🐥 ${divide(42, 2)}`);
+console.log(`🐥 positive_n: ${positive_n(42)}`);
+console.log(`🐥 divide: ${divide(42, 2)}`);
 
-// 🐥 Some(42)
-// 🐥 Ok(21)
+// 🐥 positive_n: Some(42)
+// 🐥 divide: Ok(21)
