@@ -14,6 +14,14 @@ pub fn clone<T: Clone>(item: &T) -> T {
 // `Display`, but not for `Clone`.
 pub fn clone_and_print<T: Clone + std::fmt::Display>(item: &T) -> T {
     let clone = item.clone();
-    println!("Clone: {}", clone);
+    println!("🦀 Clone: {}", clone);
     clone
 }
+
+/// # Output
+#[test]
+fn test() {
+    clone_and_print(&"foo");
+}
+
+// 🦀 Clone: foo
