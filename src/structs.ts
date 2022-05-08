@@ -4,9 +4,9 @@
 export class MyStruct {
     constructor(
         /// Public property:
-        public foo: string,
+        public foo?: string,
         /// Private property:
-        private bar: number
+        private bar?: number
     ) { }
 }
 
