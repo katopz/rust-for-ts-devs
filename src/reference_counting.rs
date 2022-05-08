@@ -16,5 +16,13 @@ pub fn hurray_for_rc() -> Rc<String> {
 }
 
 fn print_string(string: Rc<String>) {
-    println!("{}", string);
+    println!("🦀 {}", string);
 }
+
+/// # Output
+#[test]
+fn test() {
+    hurray_for_rc();
+}
+
+// 🦀 Hello, World!
