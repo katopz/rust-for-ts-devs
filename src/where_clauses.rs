@@ -2,12 +2,14 @@
 // trait bounds out of the signature, and move them into a
 // *where clause*:
 
+use std::fmt::Display;
+
 pub fn clone_and_print<T>(item: &T) -> T
 where
-    T: Clone + std::fmt::Display,
+    T: Clone + Display,
 {
     let clone = item.clone();
-    println!("Clone: {}", clone);
+    println!("🦀 Clone: {}", clone);
     clone
 }
 
@@ -17,3 +19,14 @@ where
 {
     a + b
 }
+
+/// # Output
+#[test]
+fn test() {
+    println!("🦀 {}", clone_and_print(&"foo"));
+    println!("🦀 {}", add(1, 2));
+}
+
+// 🦀 Clone: foo
+// 🦀 foo
+// 🦀 3
