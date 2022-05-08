@@ -1,17 +1,21 @@
 // Derives an implementation of the `Clone` "trait":
 // For now, let's suffice by saying a trait is a simple way
 // for a type to indicate it implements certain functionality.
-#[derive(Clone)]
-struct MyClonableStruct {
-    foo: String, // Strings are cloneable out of the box.
+interface IMyClonableStruct {
+    foo: string, // strings are cloneable out of the box.
 }
 
-pub fn calling_clone_solves_our_woes() {
-    let a = MyClonableStruct {
-        foo: "foo".to_owned(),
-    };
+class MyClonableStruct implements IMyClonableStruct {
+    constructor(public foo: string) { }
+    clone() {
+        return new MyClonableStruct(this.foo);
+    }
+}
+
+export function calling_clone_solves_our_woes() {
+    let a = new MyClonableStruct("foo");
     let b = a.clone(); // Now we need to clone explicitly.
-    println!("🦀 {} + {} = foofoo", a.foo, b.foo);
+    console.log(`🐥 ${a.foo} + ${b.foo} = foofoo`);
 }
 
 // Side-note: Rust clones are mostly comparable to
@@ -21,9 +25,6 @@ pub fn calling_clone_solves_our_woes() {
 // mutating (part of) your data structures.
 
 /// # Output
-#[test]
-fn test() {
-    calling_clone_solves_our_woes();
-}
+calling_clone_solves_our_woes()
 
-// 🦀 foo + foo = foofoo
+// 🐥 foo + foo = foofoo
