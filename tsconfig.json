@@ -8,5 +8,6 @@
   "files": [
     "src/option_and_result",
     "src/option_and_result_conversions",
+    "src/cells",
   ]
 }
