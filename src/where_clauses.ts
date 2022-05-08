@@ -16,8 +16,7 @@ export function add<T extends number>(a: T, b: T): number {
     return a + b
 }
 
-/// # Output
-class CloneAbleItem implements ICloneAble<string> {
+export class CloneAbleItem implements ICloneAble<string> {
     constructor(public value: string) { }
     clone() {
         return new CloneAbleItem('foo')
