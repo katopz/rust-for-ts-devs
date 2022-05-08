@@ -21,3 +21,12 @@ impl std::ops::Add for MyCopyableStruct {
         }
     }
 }
+
+/// # Output
+#[test]
+fn test() {
+    let result = MyCopyableStruct { foo: 1 } + MyCopyableStruct { foo: 2 };
+    println!("🦀 Substring: {:?}", result);
+}
+
+// 🦀 Substring: MyCopyableStruct { foo: 3 }
