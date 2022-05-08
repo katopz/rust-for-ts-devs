@@ -16,9 +16,17 @@ fn print_parsed_numbers() -> Result<(), std::num::ParseIntError> {
     let split_words = split_vec(words, " ");
     let numbers = split(words, " ")
         .map(|word| word.parse::<usize>())
-        .collect::<Result<Vec<_>, _>>()?;
+        .collect::<Result<Vec<_>, _>>()
+        .unwrap();
     for (word, number) in split_words.iter().zip(numbers.iter()) {
-        println!("{} = {}", word, number);
+        println!("🦀 {} = {}", word, number);
     }
     Ok(())
+}
+
+/// # Output
+#[test]
+fn test() {
+    let _result = print_parsed_numbers();
+    // assert!(result.is_ok());
 }
