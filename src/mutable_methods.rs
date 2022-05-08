@@ -14,5 +14,13 @@ pub fn my_function() {
     // if `a` is not declared as mutable here:
     let mut a = MyStruct::new();
     a.set_foo("my_foo");
-    println!("a.foo = {}", a.foo);
+    println!("🦀 a.foo = {}", a.foo);
 }
+
+/// # Output
+#[test]
+fn test() {
+    my_function();
+}
+
+// 🦀 a.foo = my_foo
