@@ -4,7 +4,7 @@ type ProcessStr = fn(&str) -> String;
 
 fn process_and_print(string: &str, processor: ProcessStr) {
     let string = processor(string);
-    println!("Processed string: {}", string);
+    println!("🦀 Processed string: {}", string);
 }
 
 pub fn mildly_optimistic_for_callbacks() {
@@ -21,3 +21,12 @@ pub fn mildly_optimistic_for_callbacks() {
     // What we *cannot* do here is capture variables from
     // the outer scope :( For that we need traits...
 }
+
+/// # Output
+#[test]
+fn test() {
+    mildly_optimistic_for_callbacks();
+}
+
+// 🦀 Processed string: HELLO, WORLD
+// 🦀 Processed string: NEW: HelloWorld
