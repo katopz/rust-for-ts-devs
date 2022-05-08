@@ -13,3 +13,11 @@ pub fn hurray() -> u64 {
     let b = a;
     a.foo + b.foo
 }
+
+/// # Output
+#[test]
+fn test() {
+    println!("🦀 hurray: {}", hurray());
+}
+
+// 🦀 hurray: 2
