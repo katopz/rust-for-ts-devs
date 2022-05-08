@@ -4,12 +4,12 @@
 //   moved or cloned. It even has mutating methods for appending.
 // - `&str` is a reference to a string, either owned by a
 //   `String`, or hard-coded into the executable.
-pub fn keys() {
-    let string = "monkey"; // hard-coded string: `&str`
-    let mut string = string.to_owned();
-    string.push('s'); // mutate owned string: `String`
-    let substring = &string[3..]; // borrow a slice: `&str`
-    println!("🦀 Substring: {}", substring); // prints "keys"
+export function keys() {
+    let _string = "monkey"; // hard-coded string: `&str`
+    _string = _string.concat('s'); // mutate owned string: `String`
+    let substring = _string.slice(3); // borrow a slice: `&str`
+
+    console.log(`🐥 Substring: ${substring}`);
 }
 
 // Rule of thumb:
@@ -20,9 +20,6 @@ pub fn keys() {
 //   string.
 
 /// # Output
-#[test]
-fn test() {
-    keys();
-}
+keys()
 
-// 🦀 Substring: keys
+// 🐥 Substring: key
