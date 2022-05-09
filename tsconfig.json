@@ -1,13 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "module": "commonjs",
     "outDir": "out",
     "sourceMap": true
-  },
-  "files": [
-    "src/option_and_result",
-    "src/option_and_result_conversions",
-    "src/cells",
-  ]
+  }
 }
