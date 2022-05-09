@@ -38,4 +38,4 @@ export class MyEnum implements IMyEnum {
 }
 
 /// # Output
-console.log(`🦞 ${MyEnum.Plain}`);
+console.log(`🐥 ${MyEnum.Plain}`);

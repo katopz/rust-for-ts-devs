@@ -19,4 +19,4 @@ export function add(a: number, b: AlsoANumber): AndAnother {
 }
 
 /// # Output
-console.log(`🦞 ${add(1, 2.0)}`);
+console.log(`🐥 ${add(1, 2.0)}`);

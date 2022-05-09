@@ -18,5 +18,5 @@ export function greeting(): string {
 }
 
 /// # Output
-console.log(`🦞 ${concatenate('foo', 'bar')}`);
-console.log(`🦞 ${greeting()}`);
+console.log(`🐥 ${concatenate('foo', 'bar')}`);
+console.log(`🐥 ${greeting()}`);

@@ -10,7 +10,7 @@ class MyNewStruct extends MyStruct {
 
     /// Regular methods take a reference to `self`:
     public print_foo() {
-        console.log(`🦞 Foo: ${this.foo}`);
+        console.log(`🐥 Foo: ${this.foo}`);
     }
 }
 

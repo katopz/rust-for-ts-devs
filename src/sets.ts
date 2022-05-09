@@ -12,7 +12,7 @@ export function hurray_for_sets() {
     set2 = new Set((Array.from(set2) as string[]).filter(s => s.length > 1));
 
     for (let word of set2) {
-        console.log(`🦞 ${word}`);
+        console.log(`🐥 ${word}`);
     }
 }
 

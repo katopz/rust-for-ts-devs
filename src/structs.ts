@@ -19,4 +19,4 @@ export function create_struct_with_foo(foo: string): MyStruct {
 }
 
 /// # Output
-console.log(`🦞 ${create_struct_with_foo('hello').foo}`);
+console.log(`🐥 ${create_struct_with_foo('hello').foo}`);

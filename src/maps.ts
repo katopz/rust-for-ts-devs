@@ -17,15 +17,15 @@ export function hurray_for_maps() {
     bar = Object.assign({}, ...bar)
 
     for (let key in bar) {
-        console.log(`🦞 ${key}: ${bar[key]}`);
+        console.log(`🐥 ${key}: ${bar[key]}`);
     }
 
-    console.log("🦞 Entry 4: ", Object.values(bar[4] ? bar[4] : bar[4] = { 4: '!' })[0])
+    console.log("🐥 Entry 4: ", Object.values(bar[4] ? bar[4] : bar[4] = { 4: '!' })[0])
 }
 
 /// # Output
 hurray_for_maps()
 
-// 🦞 1: Hello
-// 🦞 2: World
-// 🦞 Entry 4:  !
+// 🐥 1: Hello
+// 🐥 2: World
+// 🐥 Entry 4:  !

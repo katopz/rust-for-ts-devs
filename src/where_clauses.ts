@@ -8,7 +8,7 @@ interface ICloneAble<T> {
 
 export function clone_and_print<T>(item: ICloneAble<T>) {
     let clone = item.clone();
-    console.log(`🦞 Clone:`, clone);
+    console.log(`🐥 Clone:`, clone);
     return clone
 }
 
@@ -28,9 +28,9 @@ export class CloneAbleItem implements ICloneAble<string> {
 }
 
 /// # Output
-console.log(`🦞 ${clone_and_print(new CloneAbleItem('foo'))}`)
-console.log(`🦞 ${add(1, 2)}`)
+console.log(`🐥 ${clone_and_print(new CloneAbleItem('foo'))}`)
+console.log(`🐥 ${add(1, 2)}`)
 
-// 🦞 Clone: CloneAbleItem { value: 'foo' }
-// 🦞 foo
-// 🦞 3
+// 🐥 Clone: CloneAbleItem { value: 'foo' }
+// 🐥 foo
+// 🐥 3

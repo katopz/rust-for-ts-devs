@@ -15,4 +15,4 @@ export function tuple_function(): [string, number] {
 }
 
 /// # Output
-console.log(`🦞 ${tuple_function()}`);
+console.log(`🐥 ${tuple_function()}`);

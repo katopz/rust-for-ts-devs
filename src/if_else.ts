@@ -17,7 +17,7 @@ export function other_function(input: IMyEnum) {
     const ab = input.UnnamedValues
     if (ab) {
         const [a, b] = ab
-        console.log(`🦞 Input had values: (${a}, ${b})`)
+        console.log(`🐥 Input had values: (${a}, ${b})`)
     }
 }
 
