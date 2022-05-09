@@ -6,7 +6,7 @@ where
     // P: FnOnce(&str) -> String, // This closure can only be called once
 {
     let string = processor(string);
-    println!("Processed string: {}", string);
+    println!("🦀 Processed string: {}", string);
 }
 
 pub fn hurray_for_closures() {
@@ -21,3 +21,12 @@ pub fn hurray_for_closures() {
         format!("{}: {}", prefix, result)
     });
 }
+
+/// # Output
+#[test]
+fn test() {
+    hurray_for_closures()
+}
+
+// 🦀 Processed string: HELLO, WORLD
+// 🦀 Processed string: NEW: HelloWorld
