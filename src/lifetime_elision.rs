@@ -15,3 +15,13 @@ pub fn longest<'a>(a: &'a str, b: &'a str) -> &'a str {
         b
     }
 }
+
+/// # Output
+#[test]
+fn test() {
+    println!("🦀 longest: {:?}", longest("long", "short"));
+    println!("🦀 substr: {:?}", substr("bar", 1, 1));
+}
+
+// 🦀 longest: "short"
+// 🦀 substr: "a"
