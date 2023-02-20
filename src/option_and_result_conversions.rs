@@ -3,7 +3,7 @@ use crate::option_and_result::{divide, positive_n};
 // More examples on how to use `Option` and `Result`:
 
 pub fn positive_n_result(n: i32) -> Result<i32, String> {
-    positive_n(n).ok_or_else(|| format!("{} not positive", n))
+    positive_n(n).ok_or_else(|| format!("{n} not positive"))
 }
 
 pub fn divide_option(x: i32, y: i32) -> Option<i32> {
